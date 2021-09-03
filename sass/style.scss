@@ -129,4 +129,65 @@ body {
       margin-right: 0.5em;
       color: #7e7e7e;
   }
+
+  .restaurants__section{
+    background-color: $background;
+    margin-top: 4.20rem;
+    padding-top: 3.7rem;
+    h2{
+      font-size: 1.7em;
+      font-weight:800;
+      margin-bottom: 1.8rem;
+    }
+  }
+  .card{
+    width: 21rem;
+    margin: auto;
+    border-radius: 1rem 1rem 1rem 1rem;
+    background-color: white;
+    a{
+      text-decoration: unset;
+    }
+    h3{
+      font-size: 1.2em;
+      font-weight: 800;
+      color: black;
+    }
+    p{
+      color: black;
+    }
+    img{
+      object-fit: cover;
+      width: 21rem;
+      height: 10rem;
+      border-radius: 1rem 1rem 0 0;
+    }
+  }
+  .card--text{
+    margin: 1.25rem 0 1.25rem 0;
+    padding: 0 1.5rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    .far{
+      color: black;
+      font-size: 1.6em;
+    }
+  }
+  footer{
+    background-color: $footer-color;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    a{
+      text-decoration: unset;
+      color: white;
+    }
+    h3{
+      font-family: $title-font;
+    }
+    nav{
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }
