@@ -1,11 +1,14 @@
+/*IMPORTS*/
 /*COLORS*/
 /*FONT*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/*GENERAL*/
 body {
   font-family: "roboto";
 }
 
+/*MOBILE*/
 @media only screen and (max-width: 600px) {
   .logo {
     display: flex;
@@ -21,39 +24,27 @@ body {
   }
 
   .search {
+    display: flex;
+    align-items: center;
     height: 3rem;
     background-color: #eaeaea;
   }
-  .search ::-moz-placeholder {
-    opacity: 1;
-    color: #353535;
-    font-size: 1em;
-    font-weight: 600;
-  }
-  .search :-ms-input-placeholder {
-    opacity: 1;
-    color: #353535;
-    font-size: 1em;
-    font-weight: 600;
-  }
-  .search ::placeholder {
-    opacity: 1;
-    color: #353535;
-    font-size: 1em;
-    font-weight: 600;
-  }
-  .search .fas {
-    font-size: 1.3em;
-  }
 
-  .search__imput {
-    text-align: center;
+  .search--imput {
+    display: flex;
+    align-items: baseline;
+    margin-left: 6.3rem;
   }
-
-  input {
-    border: none;
-    background-color: unset;
-    font-size: 1.2em;
+  .search--imput input {
+    border-style: none;
+    background: #eaeaea;
+    margin-left: 1.1rem;
+    font-size: 1em;
+    font-weight: 700;
+    color: black;
+  }
+  .search--imput .fas {
+    font-size: 1.1em;
   }
 
   .section--top {
@@ -62,10 +53,12 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #f6f6f6;
+    margin-bottom: 3rem;
   }
   .section--top h1 {
-    font-size: 2em;
-    font-weight: 700;
+    font-size: 1.6em;
+    font-weight: 850;
+    line-height: 1.25em;
     text-align: center;
     margin-top: 2.7rem;
   }
@@ -73,7 +66,7 @@ body {
     text-align: center;
     font-size: 1.1em;
     font-weight: 300;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     margin-bottom: 0.5em;
   }
   .section--top button {
@@ -81,11 +74,58 @@ body {
     height: 3.2rem;
     width: 14rem;
     color: white;
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 600;
     border-style: none;
     border-radius: 2rem 2rem 2rem 2rem;
     background: #9356dc;
     background: linear-gradient(180deg, #ff79da 60%, #9356dc 100%);
+  }
+
+  .menu__section {
+    width: 90%;
+    margin: auto;
+  }
+  .menu__section h2 {
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+
+  .smallcard {
+    display: flex;
+    align-items: center;
+    background: #f6f6f6;
+    border-radius: 1.5em;
+    margin-bottom: 1.5rem;
+    height: 4.5rem;
+    box-shadow: 0 2.8px 2.2px #eaeaea, 0 6.7px 5.3px #eaeaea, 0 12.5px 10px #eaeaea, 0 22.3px 17.9px #eaeaea, 0 41.8px 33.4px #eaeaea, 0 100px 80px #eaeaea;
+  }
+  .smallcard:hover {
+    background-color: #f5edff;
+  }
+  .smallcard:hover .fas {
+    color: #9356dc;
+  }
+
+  .smallcard__content {
+    margin-left: -0.8em;
+    display: flex;
+    align-items: center;
+  }
+  .smallcard__content span {
+    text-align: center;
+    margin-right: 0.5em;
+    color: white;
+    padding: 0.4em;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 40px;
+    background: #9356dc;
+  }
+
+  .small-icon {
+    margin-right: 0.5em;
+    color: #7e7e7e;
   }
 }/*# sourceMappingURL=style.css.map */
