@@ -134,6 +134,10 @@ body {
     background-color: $background;
     margin-top: 4.20rem;
     padding-top: 3.7rem;
+    height: 65rem;
+    .section--title{
+      margin-left: 1em;
+    }
     h2{
       font-size: 1.7em;
       font-weight:800;
@@ -142,7 +146,7 @@ body {
   }
   .card{
     width: 21rem;
-    margin: auto;
+    margin: auto auto 1rem auto;
     border-radius: 1rem 1rem 1rem 1rem;
     background-color: white;
     a{
@@ -164,8 +168,7 @@ body {
     }
   }
   .card--text{
-    margin: 1.25rem 0 1.25rem 0;
-    padding: 0 1.5rem 0 1rem;
+    padding: 1.25rem 1.5rem 0.8rem 1rem;
     display: flex;
     justify-content: space-between;
     .far{
@@ -178,16 +181,27 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
+    padding: 2em 0 2em 1em;
     a{
       text-decoration: unset;
       color: white;
     }
     h3{
       font-family: $title-font;
+      font-size: 1.3em;
+      font-weight: 300;
+      padding-bottom: 0.8em;
     }
     nav{
       display: flex;
       flex-direction: column;
+      line-height: 2em;
+    }
+    .fa-hands-helping{
+      padding-right: 0.6em;
+    }
+    .fa-utensils{
+      padding-right: 1em;
     }
   }
 }
