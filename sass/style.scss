@@ -31,20 +31,20 @@ body {
     height: 3rem;
     background-color: $background;
   }
-  .search--imput{
+  .search--imput {
     display: flex;
     align-items: baseline;
     margin-left: 6.3rem;
-    input{
+    input {
       border-style: none;
       background: $background;
-      margin-left: 1.10rem;
+      margin-left: 1.1rem;
       font-size: 1em;
       font-weight: 700;
       color: black;
     }
-    .fas{
-      font-size: 1.10em;
+    .fas {
+      font-size: 1.1em;
     }
   }
   .section--top {
@@ -77,12 +77,12 @@ body {
       font-weight: 600;
       border-style: none;
       border-radius: 2rem 2rem 2rem 2rem;
-      background: $primary-color;
-      background: linear-gradient(
-        180deg,
-        rgba(255, 121, 218, 1) 60%,
-        rgba(147, 86, 220, 1) 100%
-      );
+      background: $primary-color
+        linear-gradient(
+          180deg,
+          rgba(255, 121, 218, 1) 60%,
+          rgba(147, 86, 220, 1) 100%
+        );
     }
   }
   .menu__section {
@@ -106,7 +106,7 @@ body {
       0 41.8px 33.4px $background, 0 100px 80px $background;
     &:hover {
       background-color: $hover-pink;
-      .fas{
+      .fas {
         color: $primary-color;
       }
     }
@@ -126,82 +126,82 @@ body {
       background: $primary-color;
     }
   }
-  .small-icon{
-      margin-right: 0.5em;
-      color: #7e7e7e;
+  .small-icon {
+    margin-right: 0.5em;
+    color: #7e7e7e;
   }
 
-  .restaurants__section{
+  .restaurants__section {
     background-color: $background;
-    margin-top: 4.20rem;
+    margin-top: 4.2rem;
     padding-top: 3.7rem;
     height: 65rem;
-    .section--title{
+    .section--title {
       margin-left: 1em;
     }
-    h2{
+    h2 {
       font-size: 1.7em;
-      font-weight:800;
+      font-weight: 800;
       margin-bottom: 1.8rem;
     }
   }
-  .card{
+  .card {
     width: 21rem;
     margin: auto auto 1rem auto;
     border-radius: 1rem 1rem 1rem 1rem;
     background-color: white;
-    a{
+    a {
       text-decoration: unset;
     }
-    h3{
+    h3 {
       font-size: 1.2em;
       font-weight: 800;
       color: black;
     }
-    p{
+    p {
       color: black;
     }
-    img{
+    img {
       object-fit: cover;
       width: 21rem;
       height: 10rem;
       border-radius: 1rem 1rem 0 0;
     }
   }
-  .card--text{
+  .card--text {
     padding: 1.25rem 1.5rem 0.8rem 1rem;
     display: flex;
     justify-content: space-between;
-    .far{
+    .far {
       color: black;
       font-size: 1.6em;
     }
   }
-  footer{
+  footer {
     background-color: $footer-color;
     color: white;
     display: flex;
     flex-direction: column;
     padding: 2em 0 2em 1em;
-    a{
+    a {
       text-decoration: unset;
       color: white;
     }
-    h3{
+    h3 {
       font-family: $title-font;
       font-size: 1.3em;
       font-weight: 300;
       padding-bottom: 0.8em;
     }
-    nav{
+    nav {
       display: flex;
       flex-direction: column;
       line-height: 2em;
     }
-    .fa-hands-helping{
+    .fa-hands-helping {
       padding-right: 0.6em;
     }
-    .fa-utensils{
+    .fa-utensils {
       padding-right: 1em;
     }
   }
