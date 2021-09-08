@@ -1,0 +1,80 @@
+/*IMPORTS*/
+@import "../components/combined.scss";
+
+.photo {
+  width: 100%;
+  height: 14rem;
+}
+.section--menu {
+  background-color: #eaeaea;
+  border-top-left-radius: 1.8rem;
+  border-top-right-radius: 1.8rem;
+  margin-top: -2.6rem;
+  position: relative;
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
+  .section__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem 1rem 1rem;
+    h2 {
+      font-family: "Shrikhand";
+      font-size: 1.5em;
+      font-weight: 500;
+    }
+    .far {
+      font-size: 1.3em;
+      font-weight: 100;
+    }
+  }
+}
+.entree {
+  width: 10%;
+  padding-bottom: 0.5rem;
+  margin: 0 0 0.9rem 1rem;
+  text-transform: uppercase;
+  border-bottom-width: 10%;
+  border-bottom: 3px solid #99e2d0;
+}
+.entree--container {
+  width: 85%;
+  margin: auto;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem 1rem 0.5rem 1rem;
+  margin-bottom: 1rem;
+  .entree__detail {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.entree__title {
+  font-weight: 700;
+}
+.entree__detail {
+  margin-top: 0.5rem;
+  font-size: 0.9em;
+  strong {
+    font-weight: 700;
+  }
+}
+.section__element {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.1rem;
+  button {
+    height: 3rem;
+    width: 11.5rem;
+    color: white;
+    font-size: 0.9em;
+    font-weight: 600;
+    border-style: none;
+    border-radius: 2rem 2rem 2rem 2rem;
+    background: #9356dc;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 121, 218, 1) 60%,
+      rgba(147, 86, 220, 1) 100%
+    );
+  }
+}

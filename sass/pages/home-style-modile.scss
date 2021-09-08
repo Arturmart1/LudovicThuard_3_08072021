@@ -1,0 +1,195 @@
+@import "../components/combined.scss";
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0.2em;
+    height: 3.94rem;
+    box-shadow: 0 2.8px 2.2px $background, 0 6.7px 5.3px $background,
+      0 12.5px 10px $background, 0 22.3px 17.9px $background,
+      0 41.8px 33.4px $background, 0 100px 80px $background;
+  }
+  .logo-img {
+    width: 10.5rem;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    background-color: $background;
+  }
+  .search--imput {
+    display: flex;
+    align-items: baseline;
+    margin-left: 6.3rem;
+    input {
+      border-style: none;
+      background: $background;
+      margin-left: 1.1rem;
+      font-size: 1em;
+      font-weight: 700;
+      color: black;
+    }
+    .fas {
+      font-size: 1.1em;
+    }
+  }
+  .section--top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $background-light;
+    margin-bottom: 3rem;
+    h1 {
+      font-size: 1.6em;
+      font-weight: 850;
+      line-height: 1.25em;
+      text-align: center;
+      margin-top: 2.7rem;
+    }
+    h2 {
+      text-align: center;
+      font-size: 1.1em;
+      font-weight: 300;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5em;
+    }
+    button {
+      margin: 2rem 0 4rem 0;
+      height: 3.2rem;
+      width: 14rem;
+      color: white;
+      font-size: 0.9em;
+      font-weight: 600;
+      border-style: none;
+      border-radius: 2rem 2rem 2rem 2rem;
+      background: $primary-color
+        linear-gradient(
+          180deg,
+          rgba(255, 121, 218, 1) 60%,
+          rgba(147, 86, 220, 1) 100%
+        );
+    }
+  }
+  .menu__section {
+    width: 90%;
+    margin: auto;
+    h2 {
+      font-size: 1.5em;
+      font-weight: 800;
+      margin-bottom: 2rem;
+    }
+  }
+  .smallcard {
+    display: flex;
+    align-items: center;
+    background: $background-light;
+    border-radius: 1.5em;
+    margin-bottom: 1.5rem;
+    height: 4.5rem;
+    box-shadow: 0 2.8px 2.2px $background, 0 6.7px 5.3px $background,
+      0 12.5px 10px $background, 0 22.3px 17.9px $background,
+      0 41.8px 33.4px $background, 0 100px 80px $background;
+    &:hover {
+      background-color: $hover-pink;
+      .fas {
+        color: $primary-color;
+      }
+    }
+  }
+  .smallcard__content {
+    margin-left: -0.8em;
+    display: flex;
+    align-items: center;
+    span {
+      text-align: center;
+      margin-right: 0.5em;
+      color: white;
+      padding: 0.4em;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 40px;
+      background: $primary-color;
+    }
+  }
+  .small-icon {
+    margin-right: 0.5em;
+    color: #7e7e7e;
+  }
+
+  .restaurants__section {
+    background-color: $background;
+    margin-top: 4.2rem;
+    padding-top: 3.7rem;
+    height: 65rem;
+    .section--title {
+      margin-left: 1em;
+    }
+    h2 {
+      font-size: 1.7em;
+      font-weight: 800;
+      margin-bottom: 1.8rem;
+    }
+  }
+  .card {
+    width: 21rem;
+    margin: auto auto 1rem auto;
+    border-radius: 1rem 1rem 1rem 1rem;
+    background-color: white;
+    a {
+      text-decoration: unset;
+    }
+    h3 {
+      font-size: 1.2em;
+      font-weight: 800;
+      color: black;
+    }
+    p {
+      color: black;
+    }
+    img {
+      object-fit: cover;
+      width: 21rem;
+      height: 10rem;
+      border-radius: 1rem 1rem 0 0;
+    }
+  }
+  .card--text {
+    padding: 1.25rem 1.5rem 0.8rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    .far {
+      color: black;
+      font-size: 1.6em;
+    }
+  }
+  footer {
+    background-color: $footer-color;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 0 2em 1em;
+    a {
+      text-decoration: unset;
+      color: white;
+    }
+    h3 {
+      font-family: $title-font;
+      font-size: 1.3em;
+      font-weight: 300;
+      padding-bottom: 0.8em;
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      line-height: 2em;
+    }
+    .fa-hands-helping {
+      padding-right: 0.6em;
+    }
+    .fa-utensils {
+      padding-right: 1em;
+    }
+  }
