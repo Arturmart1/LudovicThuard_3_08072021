@@ -1,2 +1,10 @@
-
-/*# sourceMappingURL=menu-style-responsive.css.map *//*# sourceMappingURL=menu-style-responsive.css.map */
+@media only screen and (min-width: 650px) {
+  .photo {
+    height: 30rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .photo {
+    height: 50rem;
+  }
+}/*# sourceMappingURL=menu-style-responsive.css.map */
