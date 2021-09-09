@@ -1,0 +1,41 @@
+@media only screen and (min-width: 1000px) {
+  body {
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  .search--imput {
+    margin: auto;
+  }
+
+  .restaurants__section {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .restaurants__section .section__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .restaurants__section .card {
+    margin: 1rem;
+    order: 1;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .restaurants__section {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .restaurants__section .section__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .restaurants__section .card {
+    margin: 1rem;
+    order: 1;
+  }
+}/*# sourceMappingURL=home-style-responsive.css.map */

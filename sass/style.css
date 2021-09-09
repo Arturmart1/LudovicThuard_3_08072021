@@ -1,7 +1,7 @@
 /*MOBILE VERSION */
 /*COLORS*/
 /*FONT*/
-body {
+section {
   font-family: "roboto";
 }
 
@@ -206,6 +206,23 @@ footer .fa-utensils {
 /*IMPORTS*/
 /*COLORS*/
 /*FONT*/
+body {
+  font-family: "roboto";
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 0.2em;
+  height: 3.94rem;
+  box-shadow: 0 2.8px 2.2px #eaeaea, 0 6.7px 5.3px #eaeaea, 0 12.5px 10px #eaeaea, 0 22.3px 17.9px #eaeaea, 0 41.8px 33.4px #eaeaea, 0 100px 80px #eaeaea;
+}
+
+.logo-img {
+  width: 10.5rem;
+}
+
 .photo {
   width: 100%;
   height: 14rem;
@@ -284,4 +301,33 @@ footer .fa-utensils {
   border-radius: 2rem 2rem 2rem 2rem;
   background: #9356dc;
   background: linear-gradient(180deg, #ff79da 60%, #9356dc 100%);
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0 2em 1em;
+}
+footer a {
+  text-decoration: unset;
+  color: white;
+}
+footer h3 {
+  font-family: "Shrikhand";
+  font-size: 1.3em;
+  font-weight: 300;
+  padding-bottom: 0.8em;
+}
+footer nav {
+  display: flex;
+  flex-direction: column;
+  line-height: 2em;
+}
+footer .fa-hands-helping {
+  padding-right: 0.6em;
+}
+footer .fa-utensils {
+  padding-right: 1em;
 }/*# sourceMappingURL=style.css.map */
