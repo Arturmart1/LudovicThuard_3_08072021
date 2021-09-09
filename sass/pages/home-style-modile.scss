@@ -1,5 +1,9 @@
 @import "../components/combined.scss";
 
+section{
+  font-family: $text-font;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -48,6 +52,7 @@
       line-height: 1.25em;
       text-align: center;
       margin-top: 2.7rem;
+      font-family: $text-font;
     }
     h2 {
       text-align: center;
