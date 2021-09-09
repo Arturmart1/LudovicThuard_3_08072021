@@ -107,13 +107,14 @@ section {
   display: flex;
   align-items: center;
 }
-.smallcard__content span {
-  text-align: center;
+.smallcard__content .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 0.5em;
   color: white;
-  padding: 0.4em;
-  width: 1rem;
-  height: 1rem;
+  width: 1.3rem;
+  height: 1.3rem;
   border-radius: 40px;
   background: #9356dc;
 }
@@ -173,6 +174,21 @@ section {
   font-size: 1.6em;
 }
 
+.card__new {
+  position: absolute;
+  right: 1.8rem;
+  margin-top: 0.8rem;
+  height: 30px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99e2d0;
+}
+.card__new p {
+  color: #008766;
+}
+
 footer {
   background-color: #353535;
   color: white;
@@ -200,4 +216,4 @@ footer .fa-hands-helping {
 }
 footer .fa-utensils {
   padding-right: 1em;
-}/*# sourceMappingURL=home-style-modile.css.map */
+}/*# sourceMappingURL=home-style-mobile.css.map */
