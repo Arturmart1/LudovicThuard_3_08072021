@@ -1,5 +1,13 @@
+/*START IMPORT*/
+
 /*MOBILE VERSION */
 
-@import "../sass/layouts/_mobile";
-@import "../sass/layouts/_responsive";
+@import "../sass/pages/home-style-mobile.scss";
+@import "../sass/pages/menu-style-mobile.scss";
 
+/*RESPONSIVE & DESKTOP*/
+
+@import "../sass/pages/home-style-responsive.scss";
+@import "../sass/pages/menu-style-responsive.scss";
+
+/*END IMPORT*/
