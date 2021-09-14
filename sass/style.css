@@ -159,8 +159,7 @@ section {
   color: black;
 }
 .card img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 21rem;
   height: 10rem;
   border-radius: 1rem 1rem 0 0;
@@ -179,6 +178,20 @@ section {
   margin-left: 15rem;
   margin-top: 0.9rem;
   padding: 0.5rem;
+}
+
+.heart__container body {
+  font-size: 2em;
+}
+.heart__container .custom-checkbox input[type=checkbox],
+.heart__container .custom-checkbox .checked {
+  display: none;
+}
+.heart__container .custom-checkbox input[type=checkbox]:checked ~ .checked {
+  display: inline-block;
+}
+.heart__container .custom-checkbox input[type=checkbox]:checked ~ .unchecked {
+  display: none;
 }
 
 footer {
@@ -391,4 +404,6 @@ footer .fa-utensils {
     height: 50rem;
   }
 }
-/*END IMPORT*//*# sourceMappingURL=style.css.map */
+/*END IMPORT*/
+
+/*# sourceMappingURL=style.css.map */

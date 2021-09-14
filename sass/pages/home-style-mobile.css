@@ -179,6 +179,20 @@ section {
   padding: 0.5rem;
 }
 
+.heart__container body {
+  font-size: 2em;
+}
+.heart__container .custom-checkbox input[type=checkbox],
+.heart__container .custom-checkbox .checked {
+  display: none;
+}
+.heart__container .custom-checkbox input[type=checkbox]:checked ~ .checked {
+  display: inline-block;
+}
+.heart__container .custom-checkbox input[type=checkbox]:checked ~ .unchecked {
+  display: none;
+}
+
 footer {
   background-color: #353535;
   color: white;

@@ -163,14 +163,17 @@ section {
   display: flex;
   justify-content: space-between;
 }
-.card__new{
-    background-color: $third-color;
-    color: $fourth-color;
-    position: absolute;
-    margin-left: 15rem;
-    margin-top: 0.9rem;
-    padding: 0.5rem;
-  }
+.card__new {
+  background-color: $third-color;
+  color: $fourth-color;
+  position: absolute;
+  margin-left: 15rem;
+  margin-top: 0.9rem;
+  padding: 0.5rem;
+}
+.heart__container{
+  @include heart-anim;
+}
 footer {
   background-color: $footer-color;
   color: white;
