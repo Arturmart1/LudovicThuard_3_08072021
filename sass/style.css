@@ -171,24 +171,14 @@ section {
   display: flex;
   justify-content: space-between;
 }
-.card--text .far {
-  color: black;
-  font-size: 1.6em;
-}
 
 .card__new {
-  position: absolute;
-  right: 1.8rem;
-  margin-top: 0.8rem;
-  height: 30px;
-  width: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #99e2d0;
-}
-.card__new p {
   color: #008766;
+  position: absolute;
+  margin-left: 15rem;
+  margin-top: 0.9rem;
+  padding: 0.5rem;
 }
 
 footer {
