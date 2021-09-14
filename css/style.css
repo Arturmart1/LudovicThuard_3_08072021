@@ -1,8 +1,9 @@
 /*START IMPORT*/
-/*MOBILE VERSION */
+/*COMPONENTS*/
 /*COLORS*/
 /*FONT*/
-@keyframes heart {}
+/*HEART ANIMATION*/
+/*MOBILE VERSION */
 section {
   font-family: "roboto";
 }
@@ -165,6 +166,29 @@ section {
   height: 10rem;
   border-radius: 1rem 1rem 0 0;
 }
+.card .heart-box {
+  width: auto;
+  height: auto;
+}
+.card .heart-box .heart1 {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.card .heart-box path {
+  stroke: black;
+  stroke-width: 1px;
+  stroke-opacity: 1;
+  fill: url(#gradient1);
+  fill-opacity: 0;
+  transition: all 1s ease-in-out;
+}
+.card .heart-box path:hover {
+  fill-opacity: 1;
+  stroke-opacity: 0;
+}
+.card .heart-box svg {
+  overflow: visible;
+}
 
 .card--text {
   padding: 1.25rem 1.5rem 0.8rem 1rem;
@@ -179,6 +203,26 @@ section {
   margin-left: 15rem;
   margin-top: 0.9rem;
   padding: 0.5rem;
+}
+
+.heart__container .heart1 {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.heart__container path {
+  stroke: black;
+  stroke-width: 1px;
+  stroke-opacity: 1;
+  fill: url(#gradient1);
+  fill-opacity: 0;
+  transition: all 1s ease-in-out;
+}
+.heart__container path:hover {
+  fill-opacity: 1;
+  stroke-opacity: 0;
+}
+.heart__container svg {
+  overflow: visible;
 }
 
 footer {
@@ -210,10 +254,6 @@ footer .fa-utensils {
   padding-right: 1em;
 }
 
-/*IMPORTS*/
-/*COLORS*/
-/*FONT*/
-@keyframes heart {}
 body {
   font-family: "roboto";
 }
@@ -338,6 +378,11 @@ footer .fa-hands-helping {
 }
 footer .fa-utensils {
   padding-right: 1em;
+}
+
+.heart1 {
+  width: 100px;
+  height: 100px;
 }
 
 /*RESPONSIVE & DESKTOP*/

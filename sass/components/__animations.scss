@@ -1,5 +1,24 @@
-@import "../components/_keyframes";
+/*HEART ANIMATION*/
 
 @mixin heart-anim {
-  
+    .heart1{
+        width: 0.5rem;
+        height: 0.5rem;
+      }
+      path{
+        stroke: black;
+        stroke-width: 1px;
+        stroke-opacity: 1;
+        fill: url(#gradient1);
+        fill-opacity: 0;
+        transition: all 1s ease-in-out;
+       }
+      path:hover{
+        fill-opacity: 1;
+        stroke-opacity: 0;
+        
+      }
+      svg{
+        overflow: visible;
+      }
 }
