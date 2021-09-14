@@ -2,6 +2,24 @@
 /*MOBILE VERSION */
 /*COLORS*/
 /*FONT*/
+@keyframes heart {
+  99% {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  }
+  100% {
+    width: 0px;
+    height: 0px;
+  }
+}
 section {
   font-family: "roboto";
 }
@@ -180,18 +198,88 @@ section {
   padding: 0.5rem;
 }
 
+.heart__container {
+  /*QUAND LA CHECKBOX EST CHECK*/
+  /*QUAND LA CHECKBOX EST CHECK*/
+}
+.heart__container html,
 .heart__container body {
-  font-size: 2em;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  font-size: 0.8em;
 }
-.heart__container .custom-checkbox input[type=checkbox],
-.heart__container .custom-checkbox .checked {
-  display: none;
+.heart__container .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  z-index: 3;
 }
-.heart__container .custom-checkbox input[type=checkbox]:checked ~ .checked {
-  display: inline-block;
+.heart__container .fas {
+  opacity: 0;
+  transition-duration: 0.5s;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  /*ON DEFINI UN BACKGROUND*/
+  -webkit-background-clip: text;
+  /*ON MET LE BACKGROUND SUR LE TEXTE*/
+  -webkit-text-fill-color: transparent;
+  /*POUR QUE LE BACKGROUND S'AFFICHE SUR LE TEXTE ON REND LE TEXTE TRANSPARENT*/
 }
-.heart__container .custom-checkbox input[type=checkbox]:checked ~ .unchecked {
-  display: none;
+.heart__container div > i {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heart__container input {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+.heart__container .fa-heart {
+  font-size: 10rem;
+}
+.heart__container input:checked ~ .far {
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+.heart__container input:checked ~ .fas {
+  transition-duration: 0.5s;
+  opacity: 1;
+}
+.heart__container .disclaimer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: loul 5s;
+  animation-fill-mode: forwards;
+}
+.heart__container h1,
+.heart__container p {
+  color: white !important;
+  text-align: center;
+}
+.heart__container h1 {
+  font-weight: 900;
+  font-size: 4rem;
+}
+.heart__container p {
+  font-size: 22px;
+  text-transform: capitalize;
+  font-weight: 700;
 }
 
 footer {
@@ -226,6 +314,24 @@ footer .fa-utensils {
 /*IMPORTS*/
 /*COLORS*/
 /*FONT*/
+@keyframes heart {
+  99% {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  }
+  100% {
+    width: 0px;
+    height: 0px;
+  }
+}
 body {
   font-family: "roboto";
 }
