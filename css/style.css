@@ -167,8 +167,8 @@ section {
   border-radius: 1rem 1rem 0 0;
 }
 .card .heart-box {
-  width: auto;
-  height: auto;
+  width: 1rem;
+  height: 1rem;
 }
 .card .heart-box .heart1 {
   width: 0.5rem;
@@ -191,7 +191,7 @@ section {
 }
 
 .card--text {
-  padding: 1.25rem 1.5rem 0.8rem 1rem;
+  padding: 1rem 1.5rem 0.8rem 1rem;
   display: flex;
   justify-content: space-between;
 }
@@ -300,7 +300,7 @@ body {
   font-weight: 100;
 }
 
-.entree {
+.meal {
   width: 10%;
   padding-bottom: 0.5rem;
   margin: 0 0 0.9rem 1rem;
@@ -309,7 +309,7 @@ body {
   border-bottom: 3px solid #99e2d0;
 }
 
-.entree--container {
+.meal--container {
   width: 85%;
   margin: auto;
   background-color: white;
@@ -317,20 +317,20 @@ body {
   padding: 1rem 1rem 0.5rem 1rem;
   margin-bottom: 1rem;
 }
-.entree--container .entree__detail {
+.meal--container .meal__detail {
   display: flex;
   justify-content: space-between;
 }
 
-.entree__title {
+.meal__title {
   font-weight: 700;
 }
 
-.entree__detail {
+.meal__detail {
   margin-top: 0.5rem;
   font-size: 0.9em;
 }
-.entree__detail strong {
+.meal__detail strong {
   font-weight: 700;
 }
 
@@ -378,11 +378,6 @@ footer .fa-hands-helping {
 }
 footer .fa-utensils {
   padding-right: 1em;
-}
-
-.heart1 {
-  width: 100px;
-  height: 100px;
 }
 
 /*RESPONSIVE & DESKTOP*/

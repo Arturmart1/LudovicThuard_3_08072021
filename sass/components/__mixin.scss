@@ -1,0 +1,20 @@
+@mixin menu-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $fourth-color;
+    width: 50px;
+    height: 63px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: absolute;
+    padding: 20px;
+    right: -50px;
+    top: 0;
+    opacity: 0;
+    transition: transform 330ms ease-in-out;
+    & .fa-check-circle {
+      color: #fff;
+      transition: transform 500ms ease-in-out;
+    }
+  }
