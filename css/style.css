@@ -300,6 +300,84 @@ body {
   font-weight: 100;
 }
 
+.meal--box .meal--box {
+  width: 30rem;
+  max-width: 30rem;
+  margin: auto;
+  position: relative;
+}
+.meal--box .meal--container {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1rem;
+  display: flex;
+  overflow: hidden;
+  width: 95%;
+  height: 4rem;
+  margin: auto;
+  background: white;
+}
+.meal--box .meal--container:hover .icone {
+  margin-right: 0;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+.meal--box .meal--container:hover i {
+  transform: rotate(360deg);
+  transition-duration: 0.5s;
+}
+.meal--box .description {
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  overflow: hidden;
+}
+.meal--box .description strong {
+  font-weight: 600;
+}
+.meal--box .meal__description {
+  width: 100%;
+  margin-left: 1rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+.meal--box .meal__description h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.meal--box .price {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  max-width: 100%;
+}
+.meal--box .icone {
+  width: 7rem;
+  background: #99e2d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -7rem;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+.meal--box .icone > i {
+  color: #99e2d0;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: white;
+  transition-duration: 0.5s;
+}
+.meal--box .texte > * {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+}
+.meal--box .price {
+  margin-left: 0.5rem;
+}
+
 .meal {
   width: 10%;
   padding-bottom: 0.5rem;
@@ -307,31 +385,6 @@ body {
   text-transform: uppercase;
   border-bottom-width: 10%;
   border-bottom: 3px solid #99e2d0;
-}
-
-.meal--container {
-  width: 85%;
-  margin: auto;
-  background-color: white;
-  border-radius: 1rem;
-  padding: 1rem 1rem 0.5rem 1rem;
-  margin-bottom: 1rem;
-}
-.meal--container .meal__detail {
-  display: flex;
-  justify-content: space-between;
-}
-
-.meal__title {
-  font-weight: 700;
-}
-
-.meal__detail {
-  margin-top: 0.5rem;
-  font-size: 0.9em;
-}
-.meal__detail strong {
-  font-weight: 700;
 }
 
 .section__element {
