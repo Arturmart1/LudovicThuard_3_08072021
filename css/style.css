@@ -5,8 +5,37 @@
 /*COMPONENT*/
 /*HEART ANIMATION*/
 /*CHECKBOX*/
-@keyframes heart {}
+/*LOADER*/
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 /*MOBILE LAYOUT */
+.dots .dots {
+  width: 3.5em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.dots .dots div {
+  width: 0.8em;
+  height: 0.8em;
+  border-radius: 50%;
+  background-color: #9356dc;
+  animation: fade 2s ease-in-out alternate infinite;
+}
+.dots .dots div:nth-of-type(1) {
+  animation-delay: -0.4s;
+}
+.dots .dots div:nth-of-type(2) {
+  animation-delay: -0.2s;
+}
+
 section {
   font-family: "roboto";
 }

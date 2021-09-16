@@ -1,7 +1,9 @@
+.dots{
+  @include loader;
+}
 section {
   font-family: $text-font;
 }
-
 .logo {
   display: flex;
   align-items: center;
