@@ -300,6 +300,9 @@ body {
   font-weight: 100;
 }
 
+.meal--box {
+  margin-bottom: 1rem;
+}
 .meal--box .meal--box {
   width: 30rem;
   max-width: 30rem;
@@ -337,12 +340,16 @@ body {
 .meal--box .meal__description {
   width: 100%;
   margin-left: 1rem;
+  padding-top: 0.9rem;
   max-width: 100%;
   overflow: hidden;
+  line-height: 1.4rem;
 }
 .meal--box .meal__description h3 {
-  font-size: 1.2em;
   font-weight: 600;
+}
+.meal--box .meal__description p {
+  font-size: 0.9em;
 }
 .meal--box .price {
   display: flex;

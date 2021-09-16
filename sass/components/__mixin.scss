@@ -36,11 +36,15 @@
   .meal__description {
     width: 100%;
     margin-left: 1rem;
+    padding-top: 0.9rem;
     max-width: 100%;
     overflow: hidden;
+    line-height: 1.4rem;
     h3{
-      font-size: 1.2em;
       font-weight: 600;
+    }
+    p{
+      font-size: 0.9em;
     }
   }
   .price {

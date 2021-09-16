@@ -1,39 +1,39 @@
-@media only screen and (min-width: 1000px){
-    body{
-        max-width: 1440px;
-        margin: auto;
+@media only screen and (min-width: 1000px) {
+  body {
+    max-width: 1440px;
+    margin: auto;
+  }
+  .search--imput {
+    margin: auto;
+  }
+  .restaurants__section {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    .section__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
-    .search--imput{
-        margin: auto;
+    .card {
+      margin: 1rem;
+      order: 1;
     }
-    .restaurants__section{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        .section__container{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;  
-        }
-        .card{
-            margin: 1rem;
-            order: 1;
-        }
-    }
+  }
 }
-@media only screen and (min-width: 1200px){
-    .restaurants__section{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        .section__container{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;  
-        }
-        .card{
-            margin: 1rem;
-            order: 1;
-        }
+@media only screen and (min-width: 1200px) {
+  .restaurants__section {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    .section__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
+    .card {
+      margin: 1rem;
+      order: 1;
+    }
+  }
 }

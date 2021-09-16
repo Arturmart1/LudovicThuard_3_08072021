@@ -3,26 +3,14 @@
   <head>
     <title>OhMyFood</title>
     <meta charset="utf-8" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
@@ -59,120 +47,186 @@
       <div class="meal">
         <p>Entrées</p>
       </div>
-      <div class="meal--container">
-        <div>
-          <div class="meal__title">
-            <p>Ravioles de foie gras</p>
-          </div>
-          <div class="meal__detail">
-            <p>Accompagnés de leur crème à la truffe</p>
-            <p><strong>25€</strong></p>
-          </div>
+      <div class="meal--box">
+        <div class="meal--container">
+            <div class="description">
+                <div class="meal__description">
+                    <h3>Ravioles de foie gras</h3>
+                    <p>Accompagnés de leur crème à la truffe</p>
+                </div>
+                <div class="price">
+                    <span><strong>25€</strong></span>
+                </div>
+            </div>
+            <div class="icone">
+                <i class="fas fa-check"></i>
+            </div>
         </div>
       </div>
-      <div class="meal--container">
-        <div>
-          <div class="meal__title">
-            <p>Caviar osciètre</p>
+      <div class="meal--box">
+          <div class="meal--container">
+              <div class="description">
+                  <div class="meal__description">
+                      <h3>Caviar osciètre</h3>
+                      <p>Sur blini à la farine de blé noir</p>
+                  </div>
+                  <div class="price">
+                      <span><strong>35€</strong></span>
+                  </div>
+              </div>
+              <div class="icone">
+                  <i class="fas fa-check"></i>
+              </div>
           </div>
-          <div class="meal__detail">
-            <p>Sur blini à la farine de blé noir</p>
-            <p><strong>35€</strong></p>
-          </div>
-        </div>
       </div>
-      <div class="meal--container">
-        <div>
-          <div class="meal__title">
-            <p>Foie gras de canard cuit entier</p>
+      <div class="meal--box">
+          <div class="meal--container">
+              <div class="description">
+                  <div class="meal__description">
+                      <h3>Homard et espuma de potiron</h3>
+                      <p>Mariné aux zestes d'orange</p>
+                  </div>
+                  <div class="price">
+                      <span><strong>20€</strong></span>
+                  </div>
+              </div>
+              <div class="icone">
+                  <i class="fas fa-check"></i>
+              </div>
           </div>
-          <div class="meal__detail">
-            <p>Confiture de figue et pain toasté</p>
-            <p><strong>35€</strong></p>
-          </div>
-        </div>
       </div>
-      <div class="meal--container">
-        <div>
-          <div class="meal__title">
-            <p>Homard et espuma de potiron</p>
-          </div>
-          <div class="meal__detail">
-            <p>Mariné aux zestes d'orange</p>
-            <p><strong>20€</strong></p>
-          </div>
+      <div class="meal--box">
+        <div class="meal--container">
+            <div class="description">
+                <div class="meal__description">
+                    <h3>Foie gras de canard cuit entier</h3>
+                    <p>Confiture de figue et pain toasté</p>
+                </div>
+                <div class="price">
+                    <span><strong>35€</strong></span>
+                </div>
+            </div>
+            <div class="icone">
+                <i class="fas fa-check"></i>
+            </div>
         </div>
+    </div>
+      <div class="meal">
+          <p>Plats</p>
+      </div>
+      <div class="meal--box">
+          <div class="meal--container">
+              <div class="description">
+                  <div class="meal__description">
+                      <h3>Noix de coquilles Saint-Jacques</h3>
+                      <p>Sur lit de purée de céleri-rave</p>
+                  </div>
+                  <div class="price">
+                      <span><strong>40€</strong></span>
+                  </div>
+              </div>
+              <div class="icone">
+                  <i class="fas fa-check"></i>
+              </div>
+          </div>
+      </div>
+      <div class="meal--box">
+          <div class="meal--container">
+              <div class="description">
+                  <div class="meal__description">
+                      <h3>Langoustine poêlée</h3>
+                      <p>Purée de patate douce</p>
+                  </div>
+                  <div class="price">
+                      <span><strong>35€</strong></span>
+                  </div>
+              </div>
+              <div class="icone">
+                  <i class="fas fa-check"></i>
+              </div>
+          </div>
+      </div>
+      <div class="meal--box">
+          <div class="meal--container">
+              <div class="description">
+                  <div class="meal__description">
+                      <h3>Mijoté de queue de boeuf</h3>
+                      <p>Et riz sauvage aux zestes de citron</p>
+                  </div>
+                  <div class="price">
+                      <span><strong>44€</strong></span>
+                  </div>
+              </div>
+              <div class="icone">
+                  <i class="fas fa-check"></i>
+              </div>
+          </div>
       </div>
       <div class="meal">
-        <p>Plats</p>
+          <p>Desserts</p>
       </div>
-      <div class="meal--container">
-        <div>
-          <div class="meal__title">
-            <p>Noix de coquilles Saint-Jacques</p>
+      <div class="meal--box">
+          <div class="meal--container">
+              <div class="description">
+                  <div class="meal__description">
+                      <h3>Macaron noisette et chocolat</h3>
+                      <p>Revisité</p>
+                  </div>
+                  <div class="price">
+                      <span><strong>18€</strong></span>
+                  </div>
+              </div>
+              <div class="icone">
+                  <i class="fas fa-check"></i>
+              </div>
           </div>
-          <div class="meal__detail">
-            <p>Sur lit de purée de céleri-rave</p>
-            <p><strong>40€</strong></p>
-          </div>
-        </div>
       </div>
-      <div class="meal--container">
-        <div>
-          <div class="meal__title">
-            <p>Langoustine poêlée</p>
+      <div class="meal--box">
+          <div class="meal--container">
+              <div class="description">
+                  <div class="meal__description">
+                      <h3>Macaron au chocolat d'exception</h3>
+                      <p>Glace au caramel brun et sel de Guérande</p>
+                  </div>
+                  <div class="price">
+                      <span><strong>18€</strong></span>
+                  </div>
+              </div>
+              <div class="icone">
+                  <i class="fas fa-check"></i>
+              </div>
           </div>
-          <div class="meal__detail">
-            <p>Purée de patate douce</p>
-            <p><strong>35€</strong></p>
-          </div>
-        </div>
       </div>
-      <div class="meal--container">
-        <div>
-          <div class="meal__title">
-            <p>Mijoté de queue de boeuf</p>
+      <div class="meal--box">
+          <div class="meal--container">
+              <div class="description">
+                  <div class="meal__description">
+                      <h3>Baba au rhum revisité</h3>
+                      <p>Avec son coulis de citron</p>
+                  </div>
+                  <div class="price">
+                      <span><strong>22€</strong></span>
+                  </div>
+              </div>
+              <div class="icone">
+                  <i class="fas fa-check"></i>
+              </div>
           </div>
-          <div class="meal__detail">
-            <p>Et riz sauvage aux zestes de citron</p>
-            <p><strong>44€</strong></p>
-          </div>
-        </div>
       </div>
-      <div class="meal">
-        <p>Desserts</p>
-      </div>
-      <div class="meal--container">
-        <div>
-          <div class="meal__title">
-            <p>Macaron noisette et chocolat</p>
-          </div>
-          <div class="meal__detail">
-            <p>Glace au caramel brun et sel de Guérande</p>
-            <p><strong>18€</strong></p>
-          </div>
-        </div>
-      </div>
-      <div class="meal--container">
-        <div>
-          <div class="meal__title">
-            <p>Baba au rhum revisité</p>
-          </div>
-          <div class="meal__detail">
-            <p>Avec son coulis de citron</p>
-            <p><strong>22€</strong></p>
-          </div>
-        </div>
-      </div>
-      <div class="meal--container">
-        <div>
-          <div class="meal__title">
-            <p>Tarte au citron meringuée</p>
-          </div>
-          <div class="meal__detail">
-            <p>Déstructurée</p>
-            <p><strong>23€</strong></p>
-          </div>
+      <div class="meal--box">
+        <div class="meal--container">
+            <div class="description">
+                <div class="meal__description">
+                    <h3>Tarte au citron meringuée</h3>
+                    <p>Déstructurée</p>
+                </div>
+                <div class="price">
+                    <span><strong>23€</strong></span>
+                </div>
+            </div>
+            <div class="icone">
+                <i class="fas fa-check"></i>
+            </div>
         </div>
       </div>
       <div class="section__element">
@@ -191,9 +245,6 @@
         <a href="#">Contact</a>
       </nav>
     </footer>
-    <script
-      src="https://kit.fontawesome.com/a08acbbd48.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/a08acbbd48.js" crossorigin="anonymous"></script>
   </body>
 </html>
