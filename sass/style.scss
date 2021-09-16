@@ -1,15 +1,25 @@
 /*START IMPORT*/
 
-/*COMPONENTS*/
+/*BASE*/
 
-@import "../sass/components/combined.scss";
+@import "./Base/_variables";
+@import "./Base/_background";
+@import "./Base/_colors";
+@import "./Base/_shadowbox";
+@import "./Base/_typo";
 
-/*MOBILE VERSION */
+/*COMPONENT*/
+
+@import "./components/_animations";
+@import "./components/_keyframes";
+@import "./components/_mixin";
+
+/*MOBILE LAYOUT */
 
 @import "../sass/pages/home-style-mobile.scss";
 @import "../sass/pages/menu-style-mobile.scss";
 
-/*RESPONSIVE & DESKTOP*/
+/*RESPONSIVE & DESKTOP LAYOUT*/
 
 @import "../sass/pages/home-style-responsive.scss";
 @import "../sass/pages/menu-style-responsive.scss";

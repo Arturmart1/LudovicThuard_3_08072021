@@ -22,3 +22,92 @@
         overflow: visible;
       }
 }
+
+/*CHECKBOX*/
+
+@mixin meal-check {
+  .meal--box {
+    width: 30rem;
+    max-width: 30rem;
+    margin: auto;
+    position: relative;
+    }
+  .meal--container {
+    box-shadow: $box-shadow;
+    border-radius: 1rem;
+    display: flex;
+    overflow: hidden;
+    width: 95%;
+    height: 4rem;
+    margin: auto;
+    background: white;
+  }
+  .meal--container:hover .icone {
+    margin-right: 0;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+  }
+  .meal--container:hover i {
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+  }
+  .description {
+    width: 100%;
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    strong{
+      font-weight: 600;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .meal__description {
+    width: 100%;
+    margin-left: 1rem;
+    padding-top: 0.9rem;
+    max-width: 100%;
+    overflow: hidden;
+    line-height: 1.4rem;
+    h3{
+      font-weight: 600;
+    }
+    p{
+      font-size: 0.9em;
+    }
+  }
+  .price {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    max-width: 100%;
+  }
+  .icone {
+    width: 7rem;
+    background: $third-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -7rem;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+  }
+  .icone > i {
+    color: $third-color;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: white;
+    transition-duration: 0.5s;
+  }
+  .texte > * {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  .price {
+    margin-left: 0.5rem;
+  }
+}
