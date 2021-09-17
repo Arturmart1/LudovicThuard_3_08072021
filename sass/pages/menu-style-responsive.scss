@@ -1,4 +1,14 @@
 @media only screen and (min-width: 650px) {
+  .topbar-container {
+    .topbar-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 60%;
+      padding-top: 1.4rem;
+      padding-bottom: 0.8rem;
+    }
+  }
   .photo {
     height: 30rem;
   }

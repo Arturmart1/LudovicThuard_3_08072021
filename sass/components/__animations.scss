@@ -1,26 +1,25 @@
 /*HEART ANIMATION*/
 
 @mixin heart-anim {
-    .heart1{
-        width: 0.5rem;
-        height: 0.5rem;
-      }
-      path{
-        stroke: black;
-        stroke-width: 1px;
-        stroke-opacity: 1;
-        fill: url(#gradient1);
-        fill-opacity: 0;
-        transition: all 1s ease-in-out;
-       }
-      path:hover{
-        fill-opacity: 1;
-        stroke-opacity: 0;
-        
-      }
-      svg{
-        overflow: visible;
-      }
+  .heart1 {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  path {
+    stroke: black;
+    stroke-width: 1px;
+    stroke-opacity: 1;
+    fill: url(#gradient1);
+    fill-opacity: 0;
+    transition: all 1s ease-in-out;
+  }
+  path:hover {
+    fill-opacity: 1;
+    stroke-opacity: 0;
+  }
+  svg {
+    overflow: visible;
+  }
 }
 
 /*CHECKBOX*/
@@ -31,7 +30,7 @@
     max-width: 30rem;
     margin: auto;
     position: relative;
-    }
+  }
   .meal--container {
     box-shadow: $box-shadow;
     border-radius: 1rem;
@@ -56,10 +55,10 @@
     display: flex;
     max-width: 100%;
     overflow: hidden;
-    strong{
+    strong {
       font-weight: 600;
     }
-    &:hover{
+    &:hover {
       cursor: pointer;
     }
   }
@@ -70,10 +69,10 @@
     max-width: 100%;
     overflow: hidden;
     line-height: 1.4rem;
-    h3{
+    h3 {
       font-weight: 600;
     }
-    p{
+    p {
       font-size: 0.9em;
     }
   }
@@ -122,21 +121,20 @@
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .dots div {
     width: 0.8em;
     height: 0.8em;
     border-radius: 50%;
     background-color: $primary-color;
-    animation: fade 2s ease-in-out alternate infinite;
+    animation: fade 2s ease-in-out alternate;
   }
-  
+
   .dots div:nth-of-type(1) {
     animation-delay: -0.4s;
   }
-  
+
   .dots div:nth-of-type(2) {
     animation-delay: -0.2s;
   }
-  
 }
