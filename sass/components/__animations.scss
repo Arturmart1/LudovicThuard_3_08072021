@@ -115,26 +115,52 @@
 
 @mixin loader {
   .dots {
-    width: 3.5em;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF80;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    animation: loading-end 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+    .dot1{
+      background-color: $primary-color;
+    }
+    .dot2{
+      background-color: $secondary-color;
+    }
+    .dot3{
+      background-color: $third-color;
+    }
   }
-
   .dots div {
     width: 0.8em;
     height: 0.8em;
     border-radius: 50%;
-    background-color: $primary-color;
     animation: fade 2s ease-in-out alternate;
   }
-
   .dots div:nth-of-type(1) {
     animation-delay: -0.4s;
   }
 
   .dots div:nth-of-type(2) {
+    animation-delay: -0.2s;
+  }
+}
+
+/*SLIDE UP MENU*/
+@mixin slide-up {
+  margin-bottom: 1rem;
+  -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+	animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
+  .meal--box div:nth-of-type(1) {
+    animation-delay: -0.4s;
+  }
+
+  .meal--box div:nth-of-type(2) {
     animation-delay: -0.2s;
   }
 }
