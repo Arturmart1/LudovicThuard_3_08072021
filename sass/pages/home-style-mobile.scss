@@ -24,7 +24,7 @@ section {
 .search--imput {
   display: flex;
   align-items: baseline;
-  margin-left: 6.3rem;
+  margin-left: 6.4rem;
   input {
     border-style: none;
     background: $background;
@@ -128,7 +128,7 @@ section {
   background-color: $background;
   margin-top: 4.2rem;
   padding-top: 3.7rem;
-  height: 65rem;
+  height: 66rem;
   .section--title {
     margin-left: 1em;
   }
@@ -153,6 +153,7 @@ section {
   }
   p {
     color: black;
+    padding-top: 0.5em;
   }
   img {
     object-fit: cover;
@@ -187,7 +188,7 @@ footer {
   color: white;
   display: flex;
   flex-direction: column;
-  padding: 2em 0 2em 1em;
+  padding: 2em 0 2em 2em;
   a {
     text-decoration: unset;
     color: white;

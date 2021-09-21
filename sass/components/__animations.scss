@@ -118,19 +118,21 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #FFFFFF80;
+    background-color: rgba(255, 255, 255, 0.459);
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     animation: loading-end 1s;
     animation-delay: 2.5s;
     animation-fill-mode: both;
     .dot1{
       background-color: $primary-color;
+      margin-right: 0.5em;
     }
     .dot2{
       background-color: $secondary-color;
+      margin-right: 0.5em;
     }
     .dot3{
       background-color: $third-color;
@@ -156,11 +158,11 @@
   margin-bottom: 1rem;
   -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
 	animation: slide-in-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) ;
-  .meal--box div:nth-of-type(1) {
+  .meal--box:nth-of-type(1) {
     animation-delay: -0.4s;
   }
 
-  .meal--box div:nth-of-type(2) {
+  .meal--box:nth-of-type(2) {
     animation-delay: -0.2s;
   }
 }

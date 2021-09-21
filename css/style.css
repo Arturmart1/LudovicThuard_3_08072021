@@ -50,20 +50,22 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: #FFFFFF80;
+  background-color: rgba(255, 255, 255, 0.459);
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   animation: loading-end 1s;
   animation-delay: 2.5s;
   animation-fill-mode: both;
 }
 .loader-container .dots .dot1 {
   background-color: #9356dc;
+  margin-right: 0.5em;
 }
 .loader-container .dots .dot2 {
   background-color: #ff79da;
+  margin-right: 0.5em;
 }
 .loader-container .dots .dot3 {
   background-color: #99e2d0;
@@ -108,7 +110,7 @@ section {
 .search--imput {
   display: flex;
   align-items: baseline;
-  margin-left: 6.3rem;
+  margin-left: 6.4rem;
 }
 .search--imput input {
   border-style: none;
@@ -212,7 +214,7 @@ section {
   background-color: #eaeaea;
   margin-top: 4.2rem;
   padding-top: 3.7rem;
-  height: 65rem;
+  height: 66rem;
 }
 .restaurants__section .section--title {
   margin-left: 1em;
@@ -239,6 +241,7 @@ section {
 }
 .card p {
   color: black;
+  padding-top: 0.5em;
 }
 .card img {
   object-fit: cover;
@@ -310,7 +313,7 @@ footer {
   color: white;
   display: flex;
   flex-direction: column;
-  padding: 2em 0 2em 1em;
+  padding: 2em 0 2em 2em;
 }
 footer a {
   text-decoration: unset;
@@ -504,10 +507,10 @@ body {
 .meal--box .price {
   margin-left: 0.5rem;
 }
-.meal--box .meal--box div:nth-of-type(1) {
+.meal--box .meal--box:nth-of-type(1) {
   animation-delay: -0.4s;
 }
-.meal--box .meal--box div:nth-of-type(2) {
+.meal--box .meal--box:nth-of-type(2) {
   animation-delay: -0.2s;
 }
 
@@ -534,35 +537,6 @@ body {
   border-radius: 2rem 2rem 2rem 2rem;
   background: #9356dc;
   background: linear-gradient(180deg, #ff79da 60%, #9356dc 100%);
-}
-
-footer {
-  background-color: #353535;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  padding: 2em 0 2em 1em;
-}
-footer a {
-  text-decoration: unset;
-  color: white;
-}
-footer h3 {
-  font-family: "Shrikhand";
-  font-size: 1.3em;
-  font-weight: 300;
-  padding-bottom: 0.8em;
-}
-footer nav {
-  display: flex;
-  flex-direction: column;
-  line-height: 2em;
-}
-footer .fa-hands-helping {
-  padding-right: 0.6em;
-}
-footer .fa-utensils {
-  padding-right: 1em;
 }
 
 /*RESPONSIVE & DESKTOP LAYOUT*/
