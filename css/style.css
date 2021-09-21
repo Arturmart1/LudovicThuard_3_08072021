@@ -162,7 +162,7 @@ section {
   background: #9356dc linear-gradient(180deg, #ff79da 60%, #9356dc 100%);
 }
 .section--top .button--link:hover {
-  background: #ffa2e5;
+  background: #ff93e1;
 }
 
 .menu__section {
@@ -524,16 +524,22 @@ body {
   justify-content: center;
   margin-top: 3.1rem;
 }
-.section__element button {
-  height: 3rem;
-  width: 11.5rem;
+.section__element .button--link {
+  margin: 2rem 0 4rem 0;
+  height: 3.2rem;
+  width: 14rem;
+  text-decoration: none;
   color: white;
-  font-size: 0.9em;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-style: none;
   border-radius: 2rem 2rem 2rem 2rem;
-  background: #9356dc;
-  background: linear-gradient(180deg, #ff79da 60%, #9356dc 100%);
+  background: #9356dc linear-gradient(180deg, #ff79da 60%, #9356dc 100%);
+}
+.section__element .button--link:hover {
+  background: #ff93e1;
 }
 
 /*RESPONSIVE & DESKTOP LAYOUT*/

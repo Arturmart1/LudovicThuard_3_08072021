@@ -78,7 +78,7 @@ section {
         rgba(147, 86, 220, 1) 100%
       );
       &:hover{
-        background: lighten($color: $secondary-color, $amount: 8);
+        background: lighten($color: $secondary-color, $amount: 5);
       }
   }
 }

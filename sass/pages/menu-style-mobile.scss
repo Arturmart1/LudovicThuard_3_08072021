@@ -71,20 +71,27 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 3.1rem;
-  button {
-    height: 3rem;
-    width: 11.5rem;
+  .button--link {
+    margin: 2rem 0 4rem 0;
+    height: 3.2rem;
+    width: 14rem;
+    text-decoration: none;
     color: white;
-    font-size: 0.9em;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-style: none;
     border-radius: 2rem 2rem 2rem 2rem;
-    background: $primary-color;
-    background: linear-gradient(
-      180deg,
-      rgba(255, 121, 218, 1) 60%,
-      rgba(147, 86, 220, 1) 100%
-    );
+    background: $primary-color
+      linear-gradient(
+        180deg,
+        rgba(255, 121, 218, 1) 60%,
+        rgba(147, 86, 220, 1) 100%
+      );
+      &:hover{
+        background: lighten($color: $secondary-color, $amount: 5);
+      }
   }
 }
 
