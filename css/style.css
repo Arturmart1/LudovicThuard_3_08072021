@@ -161,6 +161,9 @@ section {
   border-radius: 2rem 2rem 2rem 2rem;
   background: #9356dc linear-gradient(180deg, #ff79da 60%, #9356dc 100%);
 }
+.section--top .button--link:hover {
+  background: #ffa2e5;
+}
 
 .menu__section {
   width: 90%;
