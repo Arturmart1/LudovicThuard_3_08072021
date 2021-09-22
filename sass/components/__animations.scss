@@ -54,7 +54,8 @@
     width: 100%;
     display: flex;
     max-width: 100%;
-    overflow: hidden;
+    overflow: ellipsis;
+    text-overflow: ellipsis;
     strong {
       font-weight: 600;
     }
@@ -67,13 +68,16 @@
     margin-left: 1rem;
     padding-top: 0.9rem;
     max-width: 100%;
-    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow: ellipsis;
     line-height: 1.4rem;
     h3 {
       font-weight: 600;
+      text-overflow: ellipsis;
     }
     p {
       font-size: 0.9em;
+      text-overflow: ellipsis;
     }
   }
   .price {
@@ -103,7 +107,7 @@
   .texte > * {
     white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden;
+    overflow: ellipsis;
     max-width: 100%;
   }
   .price {
@@ -117,6 +121,46 @@
   .dots {
     position: fixed;
     width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.281);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    animation: loading-end 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+    .dot1{
+      background-color: $primary-color;
+      margin-right: 0.5em;
+    }
+    .dot2{
+      background-color: $secondary-color;
+      margin-right: 0.5em;
+    }
+    .dot3{
+      background-color: $third-color;
+    }
+  }
+  .dots div {
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 50%;
+    animation: fade 2s ease-in-out alternate;
+  }
+  .dots div:nth-of-type(1) {
+    animation-delay: -0.4s;
+  }
+
+  .dots div:nth-of-type(2) {
+    animation-delay: -0.2s;
+  }
+}
+
+@mixin loader-responsive {
+  .dots {
+    position: fixed;
+    width: 1440px;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.281);
     display: flex;

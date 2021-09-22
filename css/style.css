@@ -455,7 +455,8 @@ body {
   width: 100%;
   display: flex;
   max-width: 100%;
-  overflow: hidden;
+  overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 .meal--box .description strong {
   font-weight: 600;
@@ -468,14 +469,17 @@ body {
   margin-left: 1rem;
   padding-top: 0.9rem;
   max-width: 100%;
-  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow: ellipsis;
   line-height: 1.4rem;
 }
 .meal--box .meal__description h3 {
   font-weight: 600;
+  text-overflow: ellipsis;
 }
 .meal--box .meal__description p {
   font-size: 0.9em;
+  text-overflow: ellipsis;
 }
 .meal--box .price {
   display: flex;
@@ -504,7 +508,7 @@ body {
 .meal--box .texte > * {
   white-space: nowrap;
   text-overflow: ellipsis;
-  overflow: hidden;
+  overflow: ellipsis;
   max-width: 100%;
 }
 .meal--box .price {
@@ -547,6 +551,43 @@ body {
   body {
     max-width: 1440px;
     margin: auto;
+  }
+
+  .loader-container .dots {
+    position: fixed;
+    width: 1440px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.281);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    animation: loading-end 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+  }
+  .loader-container .dots .dot1 {
+    background-color: #9356dc;
+    margin-right: 0.5em;
+  }
+  .loader-container .dots .dot2 {
+    background-color: #ff79da;
+    margin-right: 0.5em;
+  }
+  .loader-container .dots .dot3 {
+    background-color: #99e2d0;
+  }
+  .loader-container .dots div {
+    width: 0.8em;
+    height: 0.8em;
+    border-radius: 50%;
+    animation: fade 2s ease-in-out alternate;
+  }
+  .loader-container .dots div:nth-of-type(1) {
+    animation-delay: -0.4s;
+  }
+  .loader-container .dots div:nth-of-type(2) {
+    animation-delay: -0.2s;
   }
 
   .search--imput {

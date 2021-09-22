@@ -3,6 +3,9 @@
     max-width: 1440px;
     margin: auto;
   }
+  .loader-container {
+    @include loader-responsive;
+  }
   .search--imput {
     margin: auto;
   }
