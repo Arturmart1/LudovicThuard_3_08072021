@@ -481,7 +481,6 @@ body {
   width: 100%;
   display: flex;
   max-width: 100%;
-  overflow: ellipsis;
   text-overflow: ellipsis;
 }
 .meal--box .description strong {
@@ -496,16 +495,13 @@ body {
   padding-top: 0.9rem;
   max-width: 100%;
   text-overflow: ellipsis;
-  overflow: ellipsis;
   line-height: 1.4rem;
 }
 .meal--box .meal__description h3 {
   font-weight: 600;
-  text-overflow: ellipsis;
 }
 .meal--box .meal__description p {
   font-size: 0.9em;
-  text-overflow: ellipsis;
 }
 .meal--box .price {
   display: flex;
@@ -534,7 +530,6 @@ body {
 .meal--box .texte > * {
   white-space: nowrap;
   text-overflow: ellipsis;
-  overflow: ellipsis;
   max-width: 100%;
 }
 .meal--box .price {
