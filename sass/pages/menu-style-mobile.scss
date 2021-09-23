@@ -52,12 +52,22 @@ body {
     }
   }
 }
+.start--section {
+  @include slide-up;
+}
+.meal--section {
+  @include slide-up;
+  animation-delay: 0.2s;
+}
+.end--section {
+  @include slide-up;
+  animation-delay: 0.3s;
+}
 .heart-box {
   @include heart-anim;
 }
 .meal--box {
   @include meal-check;
-  @include slide-up;
   margin-bottom: 1rem;
 }
 .meal {
@@ -89,9 +99,8 @@ body {
         rgba(255, 121, 218, 1) 60%,
         rgba(147, 86, 220, 1) 100%
       );
-      &:hover{
-        background: lighten($color: $secondary-color, $amount: 5);
-      }
+    &:hover {
+      background: lighten($color: $secondary-color, $amount: 5);
+    }
   }
 }
-
