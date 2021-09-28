@@ -17,8 +17,8 @@
 }
 @-webkit-keyframes slide-in-bottom {
   0% {
-    -webkit-transform: translateY(1000px);
-    transform: translateY(1000px);
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
     opacity: 0;
   }
   100% {
@@ -29,9 +29,15 @@
 }
 @keyframes slide-in-bottom {
   0% {
-    -webkit-transform: translateY(1000px);
-    transform: translateY(1000px);
+    -webkit-transform: translateY(200px);
+    transform: translateY(200px);
     opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.6;
   }
   100% {
     -webkit-transform: translateY(0);
@@ -45,6 +51,36 @@
     z-index: -1;
   }
 }
+/*GLOBAL LAYOUT*/
+footer {
+  background-color: #353535;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0 2em 2em;
+}
+footer a {
+  text-decoration: unset;
+  color: white;
+}
+footer h3 {
+  font-family: "Shrikhand";
+  font-size: 1.3em;
+  font-weight: 300;
+  padding-bottom: 0.8em;
+}
+footer nav {
+  display: flex;
+  flex-direction: column;
+  line-height: 2em;
+}
+footer .fa-hands-helping {
+  padding-right: 0.6em;
+}
+footer .fa-utensils {
+  padding-right: 1em;
+}
+
 /*MOBILE LAYOUT */
 .loader-container .dots {
   position: fixed;
@@ -268,6 +304,7 @@ section {
   fill: url(#gradient2);
   fill: url(#gradient3);
   fill: url(#gradient4);
+  fill: url(#gradient5);
   fill-opacity: 0;
   transition: all 1s ease-in-out;
 }
@@ -306,6 +343,7 @@ section {
   fill: url(#gradient2);
   fill: url(#gradient3);
   fill: url(#gradient4);
+  fill: url(#gradient5);
   fill-opacity: 0;
   transition: all 1s ease-in-out;
 }
@@ -315,35 +353,6 @@ section {
 }
 .heart__container svg {
   overflow: visible;
-}
-
-footer {
-  background-color: #353535;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  padding: 2em 0 2em 2em;
-}
-footer a {
-  text-decoration: unset;
-  color: white;
-}
-footer h3 {
-  font-family: "Shrikhand";
-  font-size: 1.3em;
-  font-weight: 300;
-  padding-bottom: 0.8em;
-}
-footer nav {
-  display: flex;
-  flex-direction: column;
-  line-height: 2em;
-}
-footer .fa-hands-helping {
-  padding-right: 0.6em;
-}
-footer .fa-utensils {
-  padding-right: 1em;
 }
 
 body {
@@ -382,6 +391,36 @@ body {
   height: 14rem;
 }
 
+.heart-box {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.heart-box .heart1 {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.heart-box path {
+  stroke: black;
+  stroke-width: 1px;
+  stroke-opacity: 1;
+  fill: url(#gradient1);
+  fill: url(#gradient2);
+  fill: url(#gradient3);
+  fill: url(#gradient4);
+  fill: url(#gradient5);
+  fill-opacity: 0;
+  transition: all 1s ease-in-out;
+}
+.heart-box path:hover {
+  fill-opacity: 1;
+  stroke-opacity: 0;
+}
+.heart-box svg {
+  overflow: visible;
+}
+
 .section--menu {
   background-color: #eaeaea;
   border-top-left-radius: 1.8rem;
@@ -396,33 +435,33 @@ body {
   justify-content: space-between;
   padding: 0 1rem 1rem 1rem;
 }
-.section--menu .section__header h2 {
+.section--menu h2 {
   font-family: "Shrikhand";
   font-size: 1.5em;
   font-weight: 500;
 }
-.section--menu .section__header .far {
+.section--menu .far {
   font-size: 1.3em;
   font-weight: 100;
 }
 
 .start--section {
   margin-bottom: 1rem;
-  -webkit-animation: slide-in-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  animation: slide-in-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .meal--section {
   margin-bottom: 1rem;
-  -webkit-animation: slide-in-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  animation: slide-in-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation-delay: 0.2s;
 }
 
 .end--section {
   margin-bottom: 1rem;
-  -webkit-animation: slide-in-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  animation: slide-in-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  -webkit-animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   animation-delay: 0.3s;
 }
 
@@ -438,6 +477,7 @@ body {
   fill: url(#gradient2);
   fill: url(#gradient3);
   fill: url(#gradient4);
+  fill: url(#gradient5);
   fill-opacity: 0;
   transition: all 1s ease-in-out;
 }
@@ -521,6 +561,9 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
   max-width: 100%;
+}
+.meal--box span {
+  font-weight: 600;
 }
 
 .meal {

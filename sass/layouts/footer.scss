@@ -1,0 +1,28 @@
+footer {
+  background-color: $footer-color;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0 2em 2em;
+  a {
+    text-decoration: unset;
+    color: white;
+  }
+  h3 {
+    font-family: $title-font;
+    font-size: 1.3em;
+    font-weight: 300;
+    padding-bottom: 0.8em;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+  }
+  .fa-hands-helping {
+    padding-right: 0.6em;
+  }
+  .fa-utensils {
+    padding-right: 1em;
+  }
+}

@@ -14,6 +14,9 @@
 @import "./components/_keyframes";
 @import "./components/_mixin";
 
+/*GLOBAL LAYOUT*/
+@import "../sass/layouts/footer.scss";
+
 /*MOBILE LAYOUT */
 
 @import "../sass/pages/home-style-mobile.scss";
