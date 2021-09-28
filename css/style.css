@@ -452,21 +452,15 @@ body {
 .meal--box {
   margin-bottom: 1rem;
 }
-.meal--box .meal--box {
-  width: 30rem;
-  max-width: 30rem;
-  margin: auto;
-  position: relative;
-}
 .meal--box .meal--container {
   box-shadow: 0 2.8px 2.2px #eaeaea, 0 6.7px 5.3px #eaeaea, 0 12.5px 10px #eaeaea, 0 22.3px 17.9px #eaeaea, 0 41.8px 33.4px #eaeaea, 0 100px 80px #eaeaea;
   border-radius: 1rem;
   display: flex;
   overflow: hidden;
-  width: 95%;
-  height: 4rem;
+  max-width: 95%;
   margin: auto;
-  background: white;
+  background-color: white;
+  height: 4.25rem;
 }
 .meal--box .meal--container:hover .icone {
   margin-right: 0;
@@ -481,27 +475,22 @@ body {
   width: 100%;
   display: flex;
   max-width: 100%;
-  text-overflow: ellipsis;
-}
-.meal--box .description strong {
-  font-weight: 600;
-}
-.meal--box .description:hover {
-  cursor: pointer;
+  overflow: hidden;
 }
 .meal--box .meal__description {
   width: 100%;
+  margin-top: 1rem;
   margin-left: 1rem;
-  padding-top: 0.9rem;
   max-width: 100%;
-  text-overflow: ellipsis;
-  line-height: 1.4rem;
+  overflow: hidden;
 }
 .meal--box .meal__description h3 {
+  font-size: 1.2em;
   font-weight: 600;
 }
 .meal--box .meal__description p {
-  font-size: 0.9em;
+  font-size: 0.8em;
+  line-height: 1.5em;
 }
 .meal--box .price {
   display: flex;
@@ -527,13 +516,11 @@ body {
   background: white;
   transition-duration: 0.5s;
 }
-.meal--box .texte > * {
+.meal--box .meal__description > * {
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
   max-width: 100%;
-}
-.meal--box .price {
-  margin-left: 0.5rem;
 }
 
 .meal {

@@ -28,21 +28,15 @@
 /*CHECKBOX*/
 
 @mixin meal-check {
-  .meal--box {
-    width: 30rem;
-    max-width: 30rem;
-    margin: auto;
-    position: relative;
-  }
   .meal--container {
     box-shadow: $box-shadow;
     border-radius: 1rem;
     display: flex;
     overflow: hidden;
-    width: 95%;
-    height: 4rem;
+    max-width: 95%;
     margin: auto;
-    background: white;
+    background-color: white;
+    height: 4.25rem;
   }
   .meal--container:hover .icone {
     margin-right: 0;
@@ -57,26 +51,21 @@
     width: 100%;
     display: flex;
     max-width: 100%;
-    text-overflow: ellipsis;
-    strong {
-      font-weight: 600;
-    }
-    &:hover {
-      cursor: pointer;
-    }
+    overflow: hidden;
   }
   .meal__description {
     width: 100%;
+    margin-top: 1rem;
     margin-left: 1rem;
-    padding-top: 0.9rem;
     max-width: 100%;
-    text-overflow: ellipsis;
-    line-height: 1.4rem;
-    h3 {
+    overflow: hidden;
+    h3{
+      font-size: 1.2em;
       font-weight: 600;
     }
-    p {
-      font-size: 0.9em;
+    p{
+      font-size: 0.8em;
+      line-height: 1.5em;
     }
   }
   .price {
@@ -103,13 +92,12 @@
     background: white;
     transition-duration: 0.5s;
   }
-  .texte > * {
+
+  .meal__description > * {
     white-space: nowrap;
     text-overflow: ellipsis;
+    overflow: hidden;
     max-width: 100%;
-  }
-  .price {
-    margin-left: 0.5rem;
   }
 }
 
