@@ -195,10 +195,10 @@ section {
   justify-content: center;
   border-style: none;
   border-radius: 2rem 2rem 2rem 2rem;
-  background: #9356dc linear-gradient(180deg, #ff79da 60%, #9356dc 100%);
+  background: #9356dc linear-gradient(170deg, #ff79da 60%, #9356dc 100%);
 }
 .section--top .button--link:hover {
-  background: #ff93e1;
+  background: #ff8de0;
 }
 
 .menu__section {
@@ -304,7 +304,6 @@ section {
   fill: url(#gradient2);
   fill: url(#gradient3);
   fill: url(#gradient4);
-  fill: url(#gradient5);
   fill-opacity: 0;
   transition: all 1s ease-in-out;
 }
@@ -343,7 +342,6 @@ section {
   fill: url(#gradient2);
   fill: url(#gradient3);
   fill: url(#gradient4);
-  fill: url(#gradient5);
   fill-opacity: 0;
   transition: all 1s ease-in-out;
 }
@@ -409,7 +407,6 @@ body {
   fill: url(#gradient2);
   fill: url(#gradient3);
   fill: url(#gradient4);
-  fill: url(#gradient5);
   fill-opacity: 0;
   transition: all 1s ease-in-out;
 }
@@ -477,7 +474,6 @@ body {
   fill: url(#gradient2);
   fill: url(#gradient3);
   fill: url(#gradient4);
-  fill: url(#gradient5);
   fill-opacity: 0;
   transition: all 1s ease-in-out;
 }
@@ -688,6 +684,10 @@ body {
 
   .photo {
     height: 30rem;
+  }
+
+  .heart-box {
+    margin-right: 1.7rem;
   }
 }
 @media only screen and (min-width: 1200px) {

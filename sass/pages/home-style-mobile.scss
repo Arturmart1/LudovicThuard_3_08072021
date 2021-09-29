@@ -73,12 +73,12 @@ section {
     border-radius: 2rem 2rem 2rem 2rem;
     background: $primary-color
       linear-gradient(
-        180deg,
+        170deg,
         rgba(255, 121, 218, 1) 60%,
         rgba(147, 86, 220, 1) 100%
       );
       &:hover{
-        background: lighten($color: $secondary-color, $amount: 5);
+        background: lighten($color: $secondary-color, $amount: 4);
       }
   }
 }
