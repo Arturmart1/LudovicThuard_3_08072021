@@ -59,4 +59,4 @@ décalage dans le temps.
 # Notes sur la réalisation du projet:
 
 - L'integration est faite sur l'éditeur Visual Studio Code avec les plugins [Live server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), [Git Extension pack](https://marketplace.visualstudio.com/items?itemName=donjayamanne.git-extension-pack).
-- [SASS] a été utilisé, incluant le système 7-1 pour l'organisation des fichiers.
+- [SASS](https://sass-lang.com/) a été utilisé, incluant le système 7-1 pour l'organisation des fichiers.
